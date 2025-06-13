@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IEQ Monitor Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="lib/chart.js"></script>
+  <script src="lib/d3.min.js"></script>
+</head>
+<body>
+  <h1>Indoor Environment Quality Monitor</h1>
+  <p>Select a variable to explore sensor readings over time.</p>
+  <select id="variableSelect">
+    <option value="ta">Air Temperature</option>
+    <option value="rh">Relative Humidity</option>
+    <option value="co2">CO₂ Level</option>
+    <option value="pmv">Predicted Mean Vote</option>
+    <option value="ppd">Predicted Percentage Dissatisfied</option>
+  </select>
+  <div id="chartContainer">
+    <canvas id="ieqChart"></canvas>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
